@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Georgia', serif;
+    }
+
+    .imgg {
+      background: url("https://pin.it/4UixEJi1x");
+      height: 100vh;
+      position: relative;
+      color: rgb(36, 5, 5);
+      text-align:center;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    .navbar .logo {
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .navbar a:hover {
+      border-bottom: 2px solid white;
+    }
+
+    .hero h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 60px;
+      font-weight: normal;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="imgg">
+    <div class="navbar">
+      <div class="logo">DLC</div>
+      <ul>
+        <li><a href="#">About DLC</a></li>
+        <li><a href="#">Our Worlds</a></li>
+        <li><a href="#">Experiences</a></li>
+        <li><a href="#">Company</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </div>
+    <h1>Gallery</h1>
+  </div>
+  
+
+</body>
+</html>

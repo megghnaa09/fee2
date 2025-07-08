@@ -1,0 +1,24 @@
+# Ignore system paths and junk
+$Recycle.Bin/
+*.log
+*.tmp
+DumpStack.log.tmp
+*.sav
+*.bak
+
+# Ignore typical OS folders
+/Program Files*/
+/ProgramData/
+/All Users/
+/Default/
+/System.sav/
+/VirtualBox/
+/OneDriveTemp/
+/Users/
+/G10/
+/FINAL/
+/ForPractical/
+/arduinoIDE/
+
+# Prevent going above your project folder
+../../../../../../
