@@ -58,7 +58,7 @@
         <br><hr><br>
         <p>Select Your Gender : </p><label><input type="checkbox" name="gender" value="male"> Male </label><br><br>
         <label><input type="checkbox" name="gender" value="female"> Female </label><br><br>
-        <label><input type="checkbox" name="gender" value="c"> Rather Not Say </label><br><br><hr><br><br>
+        <label><input type="checkbox" name="gender" value="c"> Rather Not Say </label><br><br><hr><br>
         <p>Your Stream : </p>
         <select name=" stream" required>
             <option value=" ">--SELECT--</option>
@@ -66,8 +66,11 @@
             <option value="med">Medical</option>
             <option value="arts">Arts</option>
             <option value="commerce">Commerce</option>
-        </select><br><br><hr><br><br>
+        </select><br><br><hr><br>
+        <label for="file">Upload Aadhar Card : </label> <input type="file" name="file" id="file" required><br>
+        <lable for="file">Upload 10th Marksheeet (in pdf, jpg, jpej) : </lable> <input type="file" id="file" name="file" allow=".pdf, .jpg, .jpej" required>
 
+        <br><br>
         <button type="submit" class="submit">Submit</button>
     </form></div>
 </body>
