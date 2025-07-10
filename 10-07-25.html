@@ -4,22 +4,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Form</title>
+  <style>
+    .form0{
+        padding : 30px;
+        border-style: ridge;
+        border-color : rgb(133, 90, 90);
+        border-width : 3px; 
+        border-radius : 30px;
+        background-color: rgb(228, 228, 241);
+        font-weight: bolder;
+        
+    }
+     body {
+        padding: 40px;
+        justify-content: center;  
+        align-items: center;  
+        height: 100vh;  
+        background-color: #b5b0b0; 
+        margin: 0; 
+    }
+    .submit{
+        border-color: rgb(248, 133, 133);
+        border-radius: 20px;
+
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+    }
+    input {
+      padding: 11px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      
+    }
+  </style>
 </head>
 <body>
     <div class="form0">
     <form action="/submit">
-        <lable for="name" name="name"> Name :  </lable><input type="text" name="name" id="name" placeholder="ENTER YOUR NAME">
+        <label for="name"> Name :  </label><input type="text" name="name" id="name" placeholder="ENTER YOUR NAME" required>
         <br><hr><br>
-        <lable for="email" name="email">Email : </lable><input type="email" name="email" id="email" placeholder="ENTER YOUR EMAIL">
+        <label for="age">Age : </label><input type="age" id="number" name="age" placeholder="ENTER AGE" required>
         <br><hr><br>
-        <lable for="password" name="password"> Password :  </lable> <input type="password" name="password" id="password" placeholder="ENTER YOUR PASSWORD">
+        <label for="date">Date of Birth : </label><input type="date" id="date" name="date" placeholder="ENTER DATE" required>
         <br><hr><br>
-        <lable for="moble" name="mobile">Mobile Number : </lable> <input type="tel" id="mobile" name="mobile" placeholder="ENTER YOUR MOBILE">
+        <label for="email">Email : </label><input type="email" name="email" id="email" placeholder="ENTER YOUR EMAIL" required>
         <br><hr><br>
-        <lable for="date" nam="date">Date of Submission : </lable><input type="date" id="date" name="date" placeholder="ENTER DATE">
+        <label for="password"> Password :  </label> <input type="password" name="password" id="password" placeholder="ENTER YOUR PASSWORD" required>
         <br><hr><br>
+        <label for="moble" >Mobile Number : </label> <input type="tel" id="mobile" name="mobile" placeholder="ENTER YOUR MOBILE" maxlength="10" required>
+        <br><hr><br>
+        <p>Select Your Gender : </p><label><input type="checkbox" name="gender" value="male"> Male </label><br><br>
+        <label><input type="checkbox" name="gender" value="female"> Female </label><br><br>
+        <label><input type="checkbox" name="gender" value="c"> Rather Not Say </label><br><br><hr><br><br>
+        <p>Your Stream : </p>
+        <select name=" stream" required>
+            <option value=" ">--SELECT--</option>
+            <option value="nonmed">Non Medical</option>
+            <option value="med">Medical</option>
+            <option value="arts">Arts</option>
+            <option value="commerce">Commerce</option>
+        </select><br><br><hr><br><br>
+
         <button type="submit" class="submit">Submit</button>
-        
     </form></div>
 </body>
 </html>
