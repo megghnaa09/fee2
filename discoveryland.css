@@ -87,3 +87,12 @@ nav a.active {
   border-radius: 10px;
   
 }
+.heading{
+    background-color: black;
+}
+.box{
+    display: flex;
+    width: 33%;
+    text-align: center;
+    flex-wrap: wrap;
+}
