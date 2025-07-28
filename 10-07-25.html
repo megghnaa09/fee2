@@ -44,15 +44,15 @@
 <body>
     <div class="form0">
     <form action="/submit">
-        <label for="name"> Name :  </label><input type="text" name="name" id="name" placeholder="ENTER YOUR NAME" required>
+        <label for="name"> Name :  </label><input type="text" name="name" pattern="[A-Za-z\s]+"  id="name" placeholder="ENTER YOUR NAME" required title="fill this">
         <br><hr><br>
-        <label for="age">Age : </label><input type="age" id="number" name="age" placeholder="ENTER AGE" required>
+        <label for="age">Age : </label><input type="age" id="number" name="age" pattern="[0-9\s]" placeholder="ENTER AGE" required>
         <br><hr><br>
         <label for="date">Date of Birth : </label><input type="date" id="date" name="date" placeholder="ENTER DATE" required>
         <br><hr><br>
-        <label for="email">Email : </label><input type="email" name="email" id="email" placeholder="ENTER YOUR EMAIL" required>
+        <label for="email">Email : </label><input type="email" name="email" pattern="[a-z0-9+@[a-z]\s]"  id="email" placeholder="ENTER YOUR EMAIL" required>
         <br><hr><br>
-        <label for="password"> Password :  </label> <input type="password" name="password" id="password" placeholder="ENTER YOUR PASSWORD" required>
+        <label for="password"> Password :  </label> <input type="password" pattern="[a-zA-Z0-9]" name="password" id="password" placeholder="ENTER YOUR PASSWORD" required>
         <br><hr><br>
         <label for="moble" >Mobile Number : </label> <input type="tel" id="mobile" name="mobile" placeholder="ENTER YOUR MOBILE" maxlength="10" required>
         <br><hr><br>
